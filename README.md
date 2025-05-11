@@ -5,7 +5,7 @@
 </p>
 <p align="center">
   <a href="https://tailwindcss.com" target="_blank">
-    <img src="https://tailwindcss.com/_next/static/media/mark.b1cdce6a.svg" width="200" alt="Tailwind CSS Logo">
+    <img src="https://tailwindcss.com/_next/static/media/mark.b1cdce6a.svg" width="200" alt="Tailwind CSS Logo"><img src="https://tailwindcss.com/_next/static/media/tailwindcss-logotype.128b6c6a.svg" width="400" alt="Tailwind CSS Logo">
   </a>
 </p>
 ## About UMKM MARITIM KEPULAUAN RIAU
