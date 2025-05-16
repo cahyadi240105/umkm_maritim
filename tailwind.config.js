@@ -11,4 +11,5 @@ module.exports = {
         require('flowbit/plugin'),
     ],
 }
+
   
