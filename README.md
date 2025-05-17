@@ -98,7 +98,7 @@ module.exports = {
   ],
 }
 ```
-📖 Referensi resmi: Flowbite Installation Guide
+📖 Referensi resmi: Flowbite Installation 
 
 #### 6.Kompilasi Aset Frontend
 Jalankan perintah berikut untuk menjalankan Tailwind dan Flowbite:
