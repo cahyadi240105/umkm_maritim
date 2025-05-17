@@ -46,3 +46,55 @@ Website UMKM Maritim Kepulauan Riau dilengkapi dengan berbagai fitur yang menduk
 
 - **📞 Halaman Kontak**  
   Menyediakan informasi kontak yang dapat dihubungi, termasuk tautan media sosial atau WhatsApp UMKM.
+
+  ## 🚀 Cara Menjalankan Website Secara Lokal
+
+Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer lokal Anda. Pastikan sudah menginstal **Composer**, **Node.js**, dan **NPM** sebelumnya.
+
+### 1. Kloning Repositori
+Clone repositori dari GitHub ke komputer Anda:
+```bash
+git clone https://github.com/username/nama-repo.git
+cd nama-repo
+```
+### 2. Install Dependensi Laravel (Backend)
+Jalankan perintah berikut untuk mengunduh semua dependensi PHP:
+```bash
+composer install
+```
+### 3.Salin File .env dan Buat Kunci Aplikasi
+Buat salinan file .env dan generate application key Laravel:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+### 4. Konfigurasi Database
+Edit file .env dan sesuaikan konfigurasi database Anda : 
+```bash
+DB_DATABASE=nama_database
+DB_USERNAME=username_database
+DB_PASSWORD=password_database
+```
+Lalu jalankan migrasi (jika sudah tersedia):
+```bash
+php artisan migrate
+```
+### 5.Install Dependensi Frontend (Tailwind CSS & Flowbite)
+Instalasi dependensi frontend menggunakan NPM:
+```bash
+npm install
+```
+#### 6.Kompilasi Aset Frontend
+Jalankan perintah berikut untuk menjalankan Tailwind dan Flowbite:
+```bash
+npm run dev
+```
+### 7.Jalankan Server Laravel
+Untuk menjalankan server Laravel:
+```bash
+php artisan serve
+```
+Setelah itu, buka browser dan akses website melalui:
+```bash
+http://127.0.0.1:8000
+```
