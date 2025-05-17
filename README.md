@@ -46,9 +46,8 @@ Website UMKM Maritim Kepulauan Riau dilengkapi dengan berbagai fitur yang menduk
 
 - **📞 Halaman Kontak**  
   Menyediakan informasi kontak yang dapat dihubungi, termasuk tautan media sosial atau WhatsApp UMKM.
-
-  ## 🚀 Cara Menjalankan Website Secara Lokal
-
+---
+## 🚀 Cara Menjalankan Website Secara Lokal
 Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer lokal Anda. Pastikan sudah menginstal **Composer**, **Node.js**, dan **NPM** sebelumnya.
 
 ### 1. Kloning Repositori
