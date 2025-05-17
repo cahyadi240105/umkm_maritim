@@ -49,7 +49,7 @@
       </button>
   
       <!-- Navbar Menu -->
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <div class="hidden w-full md:block md:w-auto text-xl" id="navbar-default">
         <ul class="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 text-white font-medium text-sm px-4 md:px-0">
           <li>
             <a href="/homepage" class="{{ ($title === 'homepage') ? 'font-bold' : 'font-medium' }} hover:text-yellow-400">Beranda</a>

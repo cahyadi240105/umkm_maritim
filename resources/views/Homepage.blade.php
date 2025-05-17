@@ -1,5 +1,5 @@
 @include('partials.navbar')
-<div class="container mx-auto px-4">
+<div class="container mx-auto px-4" style="hyphens: auto">>
 <!-- Search Section -->
   <section class="search-section max-w-lg mx-auto mt-12 px-4 ">
       <form class="flex items-center justify-center">

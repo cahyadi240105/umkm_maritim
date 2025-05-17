@@ -48,7 +48,7 @@
             <div class="mt-2 flex flex-col">
                 <div class="relative w-full">
                     <i class="fa-solid fa-envelope absolute left-0 top-4 fa-lg text-black text-sm mr-2"></i>
-                    <input type="text" id="message"class="w-full h-8 bg-transparent border-b border-black border-t-0 border-l-0 border-r-0 pl-6 text-sm font-['Poppins'] focus:outline-none ml-0 placeholder:text-gray-400" placeholder="  Masukkan Pesan anda">
+                    <input type="text" id="message"class="w-full h-8 bg-transparent border-b border-t-0 border-black border-l-0 border-r-0 pl-6 text-sm font-['Poppins'] ml-0 placeholder:text-gray-400" placeholder="  Masukkan Pesan anda">
                 </div>
                 <button class="mt-2 bg-orange-500 text-white text-xs font-semibold font-['Poppins'] px-4 py-2 rounded-sm hover:bg-orange-600 2 w-20 mb-4">Kirim</button>
             </div>
