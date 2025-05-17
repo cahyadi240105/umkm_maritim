@@ -114,3 +114,10 @@ Setelah itu, buka browser dan akses website melalui:
 ```bash
 http://127.0.0.1:8000
 ```
+
+## ✏️ Modifikasi
+
+Proyek ini dibuat untuk mendukung digitalisasi UMKM maritim di Kepulauan Riau.  
+Silakan modifikasi, kembangkan, atau sesuaikan kode dan fitur sesuai dengan kebutuhan Anda.
+
+Kontribusi sangat terbuka! Jangan ragu untuk membuat pull request atau memberikan masukan. Semoga bermanfaat!
