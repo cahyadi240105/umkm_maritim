@@ -14,7 +14,7 @@
                   <!-- Icon 'i'  -->
                   <a href="#" data-modal-target="default-modal" data-modal-toggle="default-modal" class="flex items-center justify-center bg-white rounded-full w-3 h-2 mt-2 absolute top-2 right-2 text-black hover:text-orange-500">
                     <i class="fa-solid fa-info-circle text-sm"></i>
-                </a>
+                  </a>
                 
                 <!-- Main modal -->
                 <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
