@@ -81,8 +81,25 @@ php artisan migrate
 ### 5.Install Dependensi Frontend (Tailwind CSS & Flowbite)
 Instalasi dependensi frontend menggunakan NPM:
 ```bash
-npm install
+npm install tailwindcss @tailwindcss/vite --save-dev
 ```
+Tambahkan Flowbite ke konfigurasi Tailwind di tailwind.config.js:
+```bash
+module.exports = {
+  content: [
+    "./resources/**/*.blade.php",
+    "./node_modules/flowbite/**/*.js"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('flowbite/plugin')
+  ],
+}
+```
+📖 Referensi resmi: Flowbite Installation Guide
+
 #### 6.Kompilasi Aset Frontend
 Jalankan perintah berikut untuk menjalankan Tailwind dan Flowbite:
 ```bash
