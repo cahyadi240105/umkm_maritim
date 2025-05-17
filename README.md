@@ -1,5 +1,20 @@
-## UMKM MARITIM KEPULAUAN RIAU
-Kami adalah sekelompok pengembang yang merancang website ini sebagai platform e-commerce untuk memperkenalkan dan memasarkan produk dari pelaku Usaha Mikro, Kecil, dan Menengah (UMKM) di sektor maritim di wilayah Kepulauan Riau. Terinspirasi oleh kekayaan laut dan budaya bahari, kami membuat website ini untuk mengangkat potensi lokal menjadi produk unggulan yang mampu bersaing di pasar nasional maupun internasional. Dalam website ini, kami mendeskripsikan perjalanan usaha mereka — yang berawal dari semangat masyarakat pesisir memanfaatkan hasil laut, hingga kini berkembang melalui inovasi digital. Produk yang ditampilkan meliputi hasil laut, kuliner, dan aksesoris Dengan dukungan pengetahuan tradisional dan pendekatan teknologi, UMKM ini terus berinovasi dan memberdayakan masyarakat pesisir.
+---
 
-## Pembangunan Website
-Website ini dibangun menggunakan framework Laravel untuk sisi backend dan Tailwind CSS untuk desain antarmuka (frontend). Pemilihan teknologi ini bertujuan untuk menghasilkan website yang responsif, efisien, dan mudah dikembangkan
+## 🌊 UMKM Maritim Kepulauan Riau
+
+Website ini dikembangkan sebagai platform e-commerce untuk mempromosikan dan memasarkan produk dari pelaku Usaha Mikro, Kecil, dan Menengah (UMKM) di sektor maritim wilayah Kepulauan Riau. Terinspirasi oleh kekayaan laut dan budaya bahari, proyek ini bertujuan mengangkat potensi lokal agar mampu bersaing di pasar nasional hingga internasional.
+
+Melalui website ini, kami menampilkan kisah dan produk para pelaku UMKM — mulai dari hasil laut, kuliner khas pesisir, hingga aksesoris bernuansa bahari. Dengan memadukan pengetahuan tradisional dan inovasi digital, UMKM ini terus berkembang dan berkontribusi dalam pemberdayaan masyarakat pesisir.
+
+---
+
+## ⚙️ Teknologi dan Pembangunan Website
+
+Website ini dibangun menggunakan:
+
+* **Laravel** untuk pengembangan backend, memastikan keamanan dan manajemen data yang efisien.
+* **Tailwind CSS** untuk desain antarmuka yang modern, responsif, dan mudah dikustomisasi.
+
+Pemilihan teknologi ini mendukung performa optimal dan kemudahan pengembangan berkelanjutan.
+
+---
