@@ -53,7 +53,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer lokal An
 ### 1. Kloning Repositori
 Clone repositori dari GitHub ke komputer Anda:
 ```bash
-git clone https://github.com/username/nama-repo.git
+https://github.com/cahyadi240105/umkm_maritim.git
 cd nama-repo
 ```
 ### 2. Install Dependensi Laravel (Backend)
