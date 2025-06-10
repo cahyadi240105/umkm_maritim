@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "judul": "Rumput Laut",
+        "deskripsi": "Rumput Laut dibudidayakan dan digunakan dalam berbagai produk makanan dan kosmetik. Kepri memiliki potensi besar dalam budidaya rumput laut karena perairannya yang bersih dan kaya nutrisi.",
+        "gambar": "images/Rumput-laut.jpg",
+        "harga": "20000",
+        "lokasi": "Pasar tradisional dan petani rumput laut di Anambas"
+    },
+    {
+        "id":2,
+        "judul": "Siput",
+        "deskripsi": "Siput, termasuk gonggong, menjadi bahan makanan khas yang digemari. Siput laut ini sering diolah menjadi berbagai hidangan lezat dan menjadi bagian dari kuliner khas Kepri.",
+        "gambar": "images/siput.jpg",
+        "harga": "50000",
+        "lokasi": "Restoran seafood dan pasar ikan di Tanjungpinang"
+    },
+    {
+        "id":3,
+        "judul": "Bilis",
+        "deskripsi": "Bilis adalah ikan teri kecil yang sering dijadikan ikan asin atau bahan sambal. Ikan ini merupakan sumber protein yang penting bagi masyarakat pesisir dan sering digunakan dalam berbagai masakan tradisional.",
+        "gambar": "images/bilis.jpg",
+        "harga": "30000",
+        "lokasi": "Pasar tradisional di Karimun"
+    },
+    {
+        "id":4,
+        "judul": "Teripang",
+        "deskripsi": "Teripang adalah hewan laut yang dikeringkan dan digunakan dalam pengobatan tradisional serta masakan. Kepri dikenal sebagai salah satu daerah penghasil teripang berkualitas tinggi.",
+        "gambar": "images/teripang.jpg",
+        "harga": "200000",
+        "lokasi": "Toko hasil laut dan eksportir Natuna"
+    },
+    {
+        "id":5,
+        "judul": "Gonggong",
+        "deskripsi": "Gonggong adalah siput laut khas Batam, sering direbus dan disajikan dengan saus. Hidangan ini telah menjadi ikon kuliner Batam dan sering ditemui di restoran seafood.",
+        "gambar": "images/gonggong.jpg",
+        "harga": "60000",
+        "lokasi": "Restoran seafood diTanjungpinang"
+    },
+    {
+        "id":6,
+        "judul": "Kerang dara",
+        "deskripsi": "Kerang dara adalah kerang yang sering dikonsumsi sebagai makanan laut segar atau olahan. Kerang ini memiliki rasa yang lezat dan menjadi favorit di kalangan pecinta seafood.",
+        "gambar": "images/kerang-dara.jpg",
+        "harga": "35000",
+        "lokasi": "Pasar ikan dan warung seafood di Batam"
+    },
+    {
+        "id":7,
+        "judul": "Cumi-Cumi",
+        "deskripsi": "Cumi-cumi adalah hasil laut yang umum diolah menjadi berbagai masakan seperti cumi goreng, cumi bakar, atau cumi asam manis. Cumi-cumi merupakan sumber protein yang penting dan banyak ditemukan di perairan Kepri.",
+        "gambar": "images/cumi.jpg",
+        "harga": "80000",
+        "lokasi": "Pasar ikan dan restoran seafood di Anambas"
+    },
+    {
+        "id":8,
+        "judul": "Kepiting Pulau",
+        "deskripsi": "Kepiting pulauan adalah hasil laut khas Kepulauan yang hidup di sekitar hutan pinggiran pulau, terutama di daerah seperti Bali, Lombok, dan Flores. Dagingnya yang tebal dan gurih sering diolah menjadi masakan khas seperti gulai kepiting atau kepiting lada hitam. Kini, kepiting bakau juga mulai dibudidayakan dan menjadi komoditas ekspor.",
+        "gambar": "images/kepiting-bakau.jpg",
+        "harga": "150000",
+        "lokasi": "Restoran seafood dan pasar ikan di Bintan"
+    },
+    {
+        "id":9,
+        "judul": "Remis",
+        "deskripsi": "Remis adalah kerang kecil yang hidup di antara bebatuan dan banyak ditemukan di pesisir Kepulauan seperti Bali dan Lombok. Remis rebus, ditumis pedas, dan gulai remis menjadi bagian dari kuliner khas Melayu Kepulauan yang sederhana namun lezat. Selain kulinernya, remis juga memiliki nilai ekonomi bagi nelayan lokal.",
+        "gambar": "images/remis.jpg",
+        "harga": "25000",
+        "lokasi": "Pasar tradisional dan warung makan di Lingga"
+    }
+]

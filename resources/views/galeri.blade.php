@@ -6,37 +6,51 @@
         <p class="text-black text-[2.5rem] font-bold">Galeri</p>
         </div>
     </div>
-    <section class="products-section mt-13 relative w-full max-w-[1203px] h-[461px] mx-auto px-4 w-[clamp(2rem,5vw ,2rem)] ">
-        <div class="product-item relative ">
-            <img src="{{ asset('images/Lakse-kuah-kulinerhunter.com_.jpg') }}" alt="Lakse Kuah" class="absolute top-0 left-0 w-[590px] h-52 rounded-[20px] object-cover">
-            <p class="absolute top-0 left-[622px] font-bold font-open-sans text-lg text-black text-[clamp(2rem,10vw ,5rem)]">Lakse</p>
-            <p class="absolute top-10 left-[622px] w-[575px] text-justify font-open-sans text-base text-black text-[clamp(2rem,10vw ,5rem)]">
-                Lakse adalah makanan khas sejenis mie yang dicampur dengan bumbu racikan khas Tionghoa dan Melayu. Lakse memiliki bentuk mie bulat putih dan sedikit tebal. Nama Lakse diambil dari bahasa Sanskerta yang mempunyai arti banyak. Hal ini menunjukkan bahwa mie Lakse dibuat dengan berbagai bumbu.
-            </p>
-        </div>
-        <div class="product-item relative">
-            <img src="{{ asset('images/gonggong-di-batam.jpg') }}" alt="Gong-gong batam" class="absolute top-[251px] left-[622px] w-[580px] h-52 rounded-[20px] object-cover">
-            <p class="absolute top-[251px] left-0 font-bold font-open-sans text-lg text-black text-[clamp(2rem,10vw ,5rem)]">Gong-gong</p>
-            <p class="absolute top-[291px] left-0 w-[596px] text-justify font-open-sans text-base text-black text-[clamp(2rem,10vw ,5rem)]">
-                Gong-gong atau Siput merupakan makanan khas masyarakat di Kepulauan Riau. Makanan ini biasanya diolah dengan cara direbus lalu dimakan dengan sambal khusus. Gong gong tidak hanya terkenal di Kepri tetapi juga sudah dikenal hingga ke Malaysia, Singapura, Korea, Thailand hingga India karena rasa dan aromanya yang khas.
-            </p>
-        </div>
-      </section>
-      <section class="products-section mt-10 relative w-full max-w-[1203px] h-[461px] mx-auto px-4 w-[clamp(2rem,5vw ,2rem)] ">
-        <div class="product-item relative ">
-            <img src="{{ asset('images/Lakse-kuah-kulinerhunter.com_.jpg') }}" alt="Lakse Kuah" class="absolute top-0 left-0 w-[590px] h-52 rounded-[20px] object-cover">
-            <p class="absolute top-0 left-[622px] font-bold font-open-sans text-lg text-black text-[clamp(2rem,10vw ,5rem)]">Lakse</p>
-            <p class="absolute top-10 left-[622px] w-[575px] text-justify font-open-sans text-base text-black text-[clamp(2rem,10vw ,5rem)]">
-                Lakse adalah makanan khas sejenis mie yang dicampur dengan bumbu racikan khas Tionghoa dan Melayu. Lakse memiliki bentuk mie bulat putih dan sedikit tebal. Nama Lakse diambil dari bahasa Sanskerta yang mempunyai arti banyak. Hal ini menunjukkan bahwa mie Lakse dibuat dengan berbagai bumbu.
-            </p>
-        </div>
-        <div class="product-item relative">
-            <img src="{{ asset('images/gonggong-di-batam.jpg') }}" alt="Gong-gong batam" class="absolute top-[251px] left-[622px] w-[580px] h-52 rounded-[20px] object-cover">
-            <p class="absolute top-[251px] left-0 font-bold font-open-sans text-lg text-black text-[clamp(2rem,10vw ,5rem)]">Gong-gong</p>
-            <p class="absolute top-[291px] left-0 w-[596px] text-justify font-open-sans text-base text-black text-[clamp(2rem,10vw ,5rem)]">
-                Gong-gong atau Siput merupakan makanan khas masyarakat di Kepulauan Riau. Makanan ini biasanya diolah dengan cara direbus lalu dimakan dengan sambal khusus. Gong gong tidak hanya terkenal di Kepri tetapi juga sudah dikenal hingga ke Malaysia, Singapura, Korea, Thailand hingga India karena rasa dan aromanya yang khas.
-            </p>
-        </div>
-      </section>
+    
+      <section class="products-section mt-13 relative w-full max-w-[1203px] h-auto mx-auto px-4" id="galeri">
+        
+        @forelse ($galeri as $item)
+            <div class="product-item relative mb-14 h-52">
+                <img src="{{ asset($item['gambar']) }}" alt="{{ $item['judul'] }}"
+                    class="absolute {{ $loop->iteration % 2 === 0 ? 'top-0 left-[622px]' : 'top-0 left-0' }} w-[580px] h-52 rounded-[20px] object-cover">
+                <p class="absolute {{ $loop->iteration % 2 === 0 ? 'top-0 left-0' : 'top-0 left-[622px]' }} font-bold font-open-sans text-lg text-black text-[clamp(1.25rem, 2vw, 1.5rem)]">
+                    {{ $item['judul'] }}
+                </p>
+                <p class="absolute {{ $loop->iteration % 2 === 0 ? 'top-10 left-0 w-[575px]' : 'top-10 left-[622px] w-[575px]' }} text-justify font-open-sans text-base text-black text-[clamp(0.875rem, 1.5vw, 1rem)]">
+                    {{ $item['deskripsi'] }}
+                </p>
+            </div>
+            @empty
+            <p class="text-center text-gray-500 text-lg">Tidak ada hasil ditemukan untuk "{{ $search }}"</p>
+        @endforelse
+    </section>
+    
 </div>
+<div class="relative">
+    <button id="scrollToTopBtn"
+      class="absolute -top-5 right-6 bg-yellow-400 text-black px-4 py-2 rounded-full shadow-lg hover:bg-yellow-300 transition-all font-semibold font-['Poppins'] z-50">
+      ↑
+    </button>
+  </div>
 @include ('partials.footer')
+<script>
+    const btn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const pageHeight = document.body.offsetHeight;
+
+        if (scrollPosition >= pageHeight - 100) {
+            btn.classList.remove("hidden");
+        } else {
+            btn.classList.add("hidden");
+        }
+    });
+
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>

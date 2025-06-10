@@ -1,6 +1,10 @@
 {{-- Footer --}}
-<footer class="bg-sky-950 mt-[100px] w-full px-4 sm:px-6 lg:px-8">
+
+<footer class="bg-sky-950 mt-[100px] w-full px-4 sm:px-6 lg:px-8" id="footer">
+  
     <div class="mx-auto w-full max-w-screen-xl p-4 py-4 lg:py-8 text-[white]">
+      <!-- Tombol Scroll ke Atas -->
+
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="#" class="flex items-center">
@@ -14,7 +18,7 @@
           <div>
             <h3 class="text-[18px] font-bold font-['Poppins'] mb-4">Overview</h3>
             <ul class="space-y-2 text-[normal] text-[14px] font-['Poppins']">
-                <li><a href="#" class="hover:text-orange-500">Beranda</a></li>
+                <li><a href="/homepage" class="hover:text-orange-500">Beranda</a></li>
                 <div class="relative">
                   <button id="dropdownProdukButton" data-dropdown-toggle="dropdownProduk" class="text-white font-medium hover:text-yellow-400 inline-flex items-center">
                   Produk
@@ -25,15 +29,15 @@
   
                   <div id="dropdownProduk" class="hidden absolute z-10 bg-sky-950 divide-y divide-gray-100 rounded-lg shadow w-44">
                   <ul class="py-2 text-sm text-white">
-                      <li><a href="#" class="block px-4 py-2 hover:bg-white text-yellow-400">Kuliner</a></li>
-                      <li><a href="#" class="block px-4 py-2 hover:bg-white text-yellow-400">Hasil Laut</a></li>
-                      <li><a href="#" class="block px-4 py-2 hover:bg-white text-yellow-400">Aksesoris</a></li>
+                      <li><a href="/kuliner" class="block px-4 py-2 hover:bg-white text-yellow-400">Kuliner</a></li>
+                      <li><a href="/hasillaut" class="block px-4 py-2 hover:bg-white text-yellow-400">Hasil Laut</a></li>
+                      <li><a href="/aksesoris" class="block px-4 py-2 hover:bg-white text-yellow-400">Aksesoris</a></li>
                   </ul>
                   </div>
                 </div>
-                <li><a href="#" class="hover:text-orange-500">Galeri</a></li>
-                <li><a href="#" class="hover:text-orange-500">Tentang Kami</a></li>
-                <li><a href="#" class="hover:text-orange-500 mb-4">Kontak</a></li>
+                <li><a href="/galeri" class="hover:text-orange-500">Galeri</a></li>
+                <li><a href="/tentangkami" class="hover:text-orange-500">Tentang Kami</a></li>
+                <li><a href="/kontak" class="hover:text-orange-500 mb-4">Kontak</a></li>
             </ul>
         </div>
         <div>
@@ -43,26 +47,16 @@
               Sabtu : 09.00 – 13.00 WIB
               Minggu & Hari Libur Nasional : Tutup
           </p>
-          <div class="mt-6">
-            <label for="message" class="text-xs font-['Poppins']"></label>
-            <div class="mt-2 flex flex-col">
-                <div class="relative w-full">
-                    <i class="fa-solid fa-envelope absolute left-0 top-4 fa-lg text-black text-sm mr-2"></i>
-                    <input type="text" id="message"class="w-full h-8 bg-transparent border-b border-t-0 border-black border-l-0 border-r-0 pl-6 text-sm font-['Poppins'] ml-0 placeholder:text-gray-400" placeholder="  Masukkan Pesan anda">
-                </div>
-                <button class="mt-2 bg-orange-500 text-white text-xs font-semibold font-['Poppins'] px-4 py-2 rounded-sm hover:bg-orange-600 2 w-20 mb-4">Kirim</button>
-            </div>
-        </div>
       </div>
       <div>
         <h3 class="text-lg font-bold font-['Poppins'] mb-4">Hubungi Kami</h3>
         <div class="space-y-2 text-sm font-['Poppins']">
             <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-phone" style="color: #000000;"></i>
+                <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                 <span>+08126xxxxxxxxx</span>
             </div>
             <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                 <span>umkmkepri@gmail.com</span>
             </div>
         </div>
@@ -83,7 +77,9 @@
         </div>
       </div>
     </div>
+    
     <div class="mt-12 border-t border-white pt-6 text-center">
+      
       <p class="text-xs font-['Poppins']">© 2025 UMKM Maritim Kepulauan Riau</p>
   </div>
   </footer>
@@ -118,5 +114,13 @@
           }
       }
   </style>
+  <script>
+    document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>  
 </body>
 </html>

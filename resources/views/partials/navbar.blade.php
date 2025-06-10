@@ -27,7 +27,105 @@
             max-width: none !important;
         }
     }
-    </style>
+
+    @media (max-width: 768px) {
+        .products-section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .product-item {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: auto;
+            position: relative;
+        }
+
+        .product-item img {
+            position: static; /* Menghapus absolute positioning */
+            width: 100%;
+            max-width: 100%;
+            height: 200px;
+            border-radius: 20px;
+        }
+
+        .product-item p {
+            position: static; /* Menghapus absolute positioning */
+            width: 100%;
+        }
+
+        .product-item p.font-bold {
+            font-size: 1.25rem;
+        }
+
+        .product-item p.text-base {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .products-section h1 {
+            font-size: 1.75rem;
+        }
+
+        .product-item img {
+            height: 150px;
+        }
+
+        .product-item p.font-bold {
+            font-size: 1.125rem;
+        }
+
+        .product-item p.text-base {
+            font-size: 0.875rem;
+        }
+    }
+    .card {
+            position: relative;
+            max-width: 300px;
+            width: 100%;
+            height: 240px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .card a.wa-link {
+            pointer-events: auto;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        
+        .error, .success {
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 0.25rem;
+        }
+        .error {
+            color: #dc2626;
+            background: #fee2e2;
+        }
+        .success {
+            color: #15803d;
+            background: #dcfce7;
+        }
+        /* Styling untuk modal */
+        .modal-content {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .modal-header {
+            border-bottom: 1px solid #f97316;
+        }
+  </style>
 <body style="color : #F4F6FF">
   <nav class="bg-sky-950 border-b border-gray-200 shadow font-['Poppins']">
     <div class=" flex flex-wrap items-center justify-between mx-10 py-5">
@@ -67,9 +165,9 @@
             <div id="dropdownProduk"
               class="hidden absolute z-10 bg-sky-950 divide-y divide-gray-100 rounded-lg shadow-md w-44 mt-2">
               <ul class="py-2 text-sm text-white">
-                <li><a href="/kuliner" class="block px-4 py-2 hover:bg-white text-yellow-400 hover:text-sky-950">Kuliner</a></li>
-                <li><a href="/hasillaut" class="block px-4 py-2 hover:bg-white text-yellow-400 hover:text-sky-950">Hasil Laut</a></li>
-                <li><a href="/aksesoris" class="block px-4 py-2 hover:bg-white text-yellow-400 hover:text-sky-950">Aksesoris</a></li>
+                <li><a href="/kuliner" class="block px-4 py-2 hover:bg-white text-yellow-400 hover:text-yellow-400 bg-transparent">Kuliner</a></li>
+                <li><a href="/hasillaut" class="block px-4 py-2 hover:bg-white text-yellow-400 hover:text-yellow-400 bg-transparent">Hasil Laut</a></li>
+                <li><a href="/aksesoris" class="block px-4 py-2 hover:bg-white text-yellow-400 hover:text-yellow-400 bg-transparent">Aksesoris</a></li>
               </ul>
             </div>
           </li>

@@ -2,7 +2,7 @@
 <div class="container mx-auto px-4" style="hyphens: auto">>
 <!-- Search Section -->
   <section class="search-section max-w-lg mx-auto mt-12 px-4 ">
-      <form class="flex items-center justify-center">
+      <form class="flex items-center justify-center" method="GET" action="{{ route('home')}}">
           <label for="default-search" class="sr-only font-poppins w-full text-sm text-gray-900 text-[clamp(2rem,5vw ,2rem)]">Search</label>
           <div class="relative w-full max-w-md">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -10,7 +10,7 @@
                       <path stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M19 19l-4-4m0-7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
                   </svg>
               </div>
-              <input type="search" id="default-search" class="search-input w-full p-4 pl-10 text-sm text-black border border-black rounded-full bg-white focus:ring-1 focus:ring-black focus:border-black font-poppins text-lg font-normal" placeholder="Search ..." required />
+              <input type="search" id="default-search" class="search-input w-full p-4 pl-10 text-sm text-black border border-black rounded-full bg-white focus:ring-1 focus:ring-black focus:border-black font-poppins text-lg font-normal" placeholder="Search ..." required name="search", value="{{ $search }}"/>
           </div>
       </form>
   </section>
@@ -20,16 +20,15 @@
       <div id="default-carousel" class="relative w-full max-w-5xl mx-auto h-[25rem] md:h-[24.625rem]" data-carousel="slide">
           <!-- Carousel wrapper -->
           <div class="relative w-full h-full overflow-hidden rounded-lg">
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{{ asset('images/logo.jpg') }}" class="block w-full h-full object-cover" alt="Slide 1">
-              </div>
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{{ asset('images/batam-5.jpg') }}" class="block w-full h-full object-cover" alt="Slide 2">
-              </div>
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{{ asset('images/batam-1.jpg') }}" class="block w-full h-full object-cover" alt="Slide 3">
-              </div>
-          </div>
+            @foreach($produk_result as $index => $item)
+            <div class="{{ $index === 0 ? '' : 'hidden' }} duration-700 ease-in-out" data-carousel-item>
+                <div class="relative h-full w-full">
+                    <img src="{{ asset($item['gambar']) }}" class="block w-full h-full object-cover" alt="{{ $item['judul'] }}"> 
+                </div>
+            </div>
+            @endforeach
+        </div>
+        
           <!-- Slider controls -->
           <button type="button" class="carousel-control-prev absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-prev>
               <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 focus:ring-2 focus:ring-black">
@@ -47,10 +46,14 @@
           </button>
           <!-- Carousel indicators -->
           <div class="carousel-indicators mt-4 flex justify-center items-center space-x-3">
-              <button type="button" class="w-3 h-3 rounded-full bg-black" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-              <button type="button" class="w-3 h-3 rounded-full bg-black/50" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              <button type="button" class="w-3 h-3 rounded-full bg-black/50" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          </div>
+            @foreach($produk_result as $index => $item)
+                <button type="button"
+                        class="w-3 h-3 rounded-full {{ $index === 0 ? 'bg-black' : 'bg-black/50' }}"
+                        aria-label="Slide {{ $index + 1 }}"
+                        data-carousel-slide-to="{{ $index }}">
+                </button>
+            @endforeach
+        </div>
       </div>
   </section>
 
@@ -68,22 +71,69 @@
       </div>
   </section>
 
-  <!-- Products Section -->
-  <section class="products-section relative w-full max-w-[1203px] h-[461px] mx-auto px-4 w-[clamp(2rem,5vw ,2rem)] ">
-    <div class="product-item relative ">
-        <img src="{{ asset('images/Lakse-kuah-kulinerhunter.com_.jpg') }}" alt="Lakse Kuah" class="absolute top-0 left-0 w-[590px] h-52 rounded-[20px] object-cover">
-        <p class="absolute top-0 left-[622px] font-bold font-[Open Sans] text-lg text-black text-[clamp(2rem,10vw ,5rem)]">Lakse</p>
-        <p class="absolute top-10 left-[622px] w-[575px] text-justify font-[Open Sans] text-base text-black text-[clamp(2rem,10vw ,5rem)]">
-            Lakse adalah makanan khas sejenis mie yang dicampur dengan bumbu racikan khas Tionghoa dan Melayu. Lakse memiliki bentuk mie bulat putih dan sedikit tebal. Nama Lakse diambil dari bahasa Sanskerta yang mempunyai arti banyak. Hal ini menunjukkan bahwa mie Lakse dibuat dengan berbagai bumbu.
-        </p>
+  @if(empty($search))
+    <!-- Tampilan default - 3 produk acak -->
+    <section class="products-section relative w-full max-w-[1203px] mx-auto px-4 w-[clamp(2rem,5vw,2rem)]">
+        @foreach ($produk_full as $index => $item)
+        <div class="product-item relative mb-14 h-52 @if($loop->last) mb-0 @endif">
+            <img src="{{ asset($item['gambar']) }}" alt="{{ $item['judul'] }}"
+                class="absolute {{ $loop->iteration % 2 === 0 ? 'top-0 left-[622px]' : 'top-0 left-0' }} w-[580px] h-52 rounded-[20px] object-cover">
+            <p class="absolute {{ $loop->iteration % 2 === 0 ? 'top-0 left-0' : 'top-0 left-[622px]' }} font-bold font-open-sans text-lg text-black text-[clamp(1.25rem, 2vw, 1.5rem)]">
+                {{ $item['judul'] }}
+            </p>
+            <p class="absolute {{ $loop->iteration % 2 === 0 ? 'top-10 left-0 w-[575px]' : 'top-10 left-[622px] w-[575px]' }} text-justify font-open-sans text-base text-black text-[clamp(0.875rem, 1.5vw, 1rem)]">
+                {{ $item['deskripsi'] }}
+            </p>
+            
+        </div>
+        @endforeach
+    </section>
+@else
+    {{-- carausel section --}}
+    <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-6">
+        @foreach ($produk_result as $index => $item)
+        <div class="relative max-w-[300px] w-full h-[240px] bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+            
+            <!-- Modal dan Info Icon -->
+            <a href="#" data-modal-target="modal-{{ $index }}" data-modal-toggle="modal-{{ $index }}" class="flex items-center justify-center bg-white rounded-full w-3 h-2 mt-2 absolute top-2 right-2 text-black hover:text-orange-500">
+                <i class="fa-solid fa-info-circle text-sm"></i>
+            </a>
+            
+            <div id="modal-{{ $index }}" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <!-- Konten modal sama seperti sebelumnya -->
+            </div>
+        
+            <!-- Gambar -->
+            <a href="#">
+                <img src="{{ asset($item['gambar']) }}" alt="{{ $item['judul'] }}" class="w-full h-[120px] object-cover" />
+            </a>
+        
+            <!-- Info -->
+            <div class="p-4">
+                <a href="#">
+                    <h5 class="text-base tracking-tight text-black">{{ $item['judul'] }}</h5>
+                </a>
+                <p class="text-sm text-black mt-1 font-bold">Rp.{{ number_format($item['harga'] ?? 0, 0, ',', '.') }}</p>
+                <p class="text-sm text-black mt-1">
+                    <i class="fa-solid fa-location-dot"></i> {{ $item['lokasi'] ?? 'Lokasi tidak tersedia' }}
+                </p>
+            </div>
+
+            <!-- WhatsApp -->
+            <a href="{{ route('wa.kuliner', ['id' => $item['id']]) }}"
+                class="absolute bottom-2 right-2 text-black hover:text-green-600 z-10"
+                target="_blank">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+            </a>                 
+        </div>
+        @endforeach
+        
+        @if($produk_result->isEmpty())
+            <div class="col-span-full text-center py-8">
+                <p class="text-gray-500">Tidak ada hasil yang ditemukan untuk pencarian "{{ $search }}"</p>
+            </div>
+        @endif
     </div>
-    <div class="product-item relative">
-        <img src="{{ asset('images/gonggong-di-batam.jpg') }}" alt="Gong-gong batam" class="absolute top-[251px] left-[622px] w-[580px] h-52 rounded-[20px] object-cover">
-        <p class="absolute top-[251px] left-0 font-bold font-[Open Sans] text-lg text-black text-[clamp(2rem,10vw ,5rem)]">Gong-gong</p>
-        <p class="absolute top-[291px] left-0 w-[596px] text-justify font-[Open Sans] text-base text-black text-[clamp(2rem,10vw ,5rem)]">
-            Gong-gong atau Siput merupakan makanan khas masyarakat di Kepulauan Riau. Makanan ini biasanya diolah dengan cara direbus lalu dimakan dengan sambal khusus. Gong gong tidak hanya terkenal di Kepri tetapi juga sudah dikenal hingga ke Malaysia, Singapura, Korea, Thailand hingga India karena rasa dan aromanya yang khas.
-        </p>
-    </div>
-  </section>
+@endif
 </div>
 @include('partials.footer')

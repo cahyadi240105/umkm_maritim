@@ -33,7 +33,7 @@
         <div>
           <h3 class="text-2xl font-semibold mb-4 font-[Poppins] text-left">Tim Kami</h3>
           <div class="w-full h-56 bg-zinc-300 rounded-md flex items-center justify-center">
-            <span class="text-gray-600 font-semibold">[Foto Tim / Ilustrasi]</span>
+            <img src="{{ asset('images/WhatsApp Image 2025-06-03 at 17.29.52_35bb1fc2.jpg')}}" alt="" srcset="" class="block w-full h-full object-cover rounded-md">
           </div>
         </div>
       </div>

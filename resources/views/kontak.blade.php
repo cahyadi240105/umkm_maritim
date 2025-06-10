@@ -43,25 +43,29 @@
 
       <!-- Formulir Kontak -->
       <div>
-        <form class="w-full max-w-md mx-auto space-y-5 text-left font-[Open Sans]">
+        @if (session('success'))
+            <div class="bg-green-100 text-green-800 p-3 rounded mb-4">{{ session('success') }}</div>
+        @endif
+        <form class="w-full max-w-md mx-auto space-y-5 text-left font-[Open Sans]" action="{{ route('kontak.kirim') }}" method="POST">
+          @csrf
           <div>
             <label for="name" class="block mb-1 text-sm font-medium text-gray-900 text-lef">Nama</label>
-            <input type="text" id="name" placeholder="" required
+            <input type="text" id="name" placeholder="" required name="nama"
               class="w-full p-2.5 border border-gray-300 rounded-lg text-sm text-gray-900 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" />
           </div>
           <div>
             <label for="email" class="block mb-1 text-sm font-medium text-gray-900 text-lef">Email</label>
-            <input type="email" id="email" placeholder="" required
+            <input type="email" id="email" placeholder="" required name="email"
               class="w-full p-2.5 border border-gray-300 rounded-lg text-sm text-gray-900 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" />
           </div>
           <div>
             <label for="subjek" class="block mb-1 text-sm font-medium text-gray-900 text-lef">Subjek</label>
-            <input type="text" id="subjek" placeholder="" required
+            <input type="text" id="subjek" placeholder="" required name="subjek"
               class="w-full p-2.5 border border-gray-300 rounded-lg text-sm text-gray-900 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" />
           </div>
           <div>
             <label for="message" class="block mb-1 text-sm font-medium text-gray-900 text-lef">Pesan</label>
-            <textarea id="message" rows="5" required
+            <textarea id="message" rows="5" required name="pesan"
               class="w-full p-2.5 border border-gray-300 rounded-lg text-sm text-gray-900 bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Tulis pesan Anda di sini..."></textarea>
           </div>

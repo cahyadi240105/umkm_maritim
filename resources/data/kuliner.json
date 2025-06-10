@@ -1,0 +1,66 @@
+[
+    {
+        "id":1,
+        "judul": "Lakse Kuah",
+        "deskripsi": "Lakse Kuah adalah hidangan tradisional Melayu dari Kabupaten Karimun dan Natuna, terbuat dari sagu yang dibentuk seperti mi dan disajikan dengan kuah santan kental berbumbu rempah serta ikan salai. Hidangan ini mencerminkan peaduan budaya Melayu dan Tionghoa yang telah lama berbaur di wilayah ini.",
+        "gambar": "images/laksa-kuah.jpg",
+        "harga": "25000",
+        "lokasi": "Warung makan lokal di Tanjungpinang"
+    },
+    {
+        "id":2,
+        "judul": "Gubal Sagu",
+        "deskripsi": "Gubal Sagu adalah makanan khas dari Kabupaten Lingga, terbuat dari sagu parut halus yang dicampur dengan kelapa muda parut, dibentuk menjadi butiran kecil, kemudian dikukus hingga matang, dikeringkan, dan disajikan kembali dalam bentuk lempengan atau butiran. Makanan ini sering dijadikan pengganti nasi oleh masyarakat pesisir Kepri dan memiliki sejarah panjang sejak masa Kesultanan Riau-Lingga.",
+        "gambar": "images/gubal.jpg",
+        "harga": "20000",
+        "lokasi": "Pasar tradisional di Lingga"
+    },
+    {
+        "id":3,
+        "judul": "Tepung Gomak",
+        "deskripsi": "Tepung Gomak adalah kue tradisional khas Melayu yang populer di Kepulauan Riau, termasuk di Bintan. Terbuat dari tepung ketan, kue ini dilumuri oleh kacang hijau yang telah dihaluskan. Nama gomak berasal dari kata dalam bahasa Melayu yang berarti dibedaki, menggambarkan tampilan kue yang seperti dibaluri tepung.",
+        "gambar": "images/tepung-gomak.jpg",
+        "harga": "15000",
+        "lokasi": "Toko oleh-oleh di Bintan"
+    },
+    {
+        "id":4,
+        "judul": "Luti Gendang",
+        "deskripsi": "Luti Gendang adalah roti goreng berisi ikan suwir berbumbu, berasal dari Anambas. Nama luti berasal dari pelafalan roti dalam dialek Tionghoa, sedangkan gendang berarti digoreng dalam bahasa Tarempa. Makanan ini mencerminkan akulturasi budaya di Kepulauan Riau dan sering dijadikan oleh-oleh khas Batam dan sekitarnya.",
+        "gambar": "images/luti-gendang.jpg",
+        "harga": "8000",
+        "lokasi": "Toko oleh-oleh Tanjungpinang"
+    },
+    {
+        "id":5,
+        "judul": "Mie Lendir",
+        "deskripsi": "Mie Lendir adalah makanan khas dari Provinsi Kepulauan Riau, berupa mi kuning yang disajikan dengan saus kental berbumbu menyerupai lendir. Hidangan ini pertama kali dibuat oleh seorang pedagang Jawa bernama Sailun pada tahun 1960-an dan kemudian dijual secara berkeliling kota.",
+        "gambar": "images/mie-lendir.jpg",
+        "harga": "20000",
+        "lokasi": "Warung makan di Nagoya"
+    },
+    {
+        "id":6,
+        "judul": "Nasi Lemak",
+        "deskripsi": "Nasi Lemak adalah makanan tradisional Melayu yang berasal dari Semenanjung Malaysia. Hidangan ini terdiri dari nasi yang dimasak dengan santan kelapa untuk memberikan rasa gurih, dan biasanya disajikan dengan telur, irisan mentimun, ikan bilis goreng, serta sambal. Nasi lemak kini menjadi makanan nasional Malaysia dan juga populer di Indonesia, Singapura, dan negara-negara lain di kawasan Asia Tenggara.",
+        "gambar": "images/nasi-lemak.jpg",
+        "harga": "30000",
+        "lokasi": "Restoran Melayu Bintan"
+    },
+    {
+        "id":7,
+        "judul": "Otak-otak",
+        "deskripsi": "Otak-otak adalah makanan khas Nusantara yang terbuat dari olahan ikan yang dihaluskan dan dicampur rempah-rempah, lalu dibungkus oleh daun dan dimasak dengan cara dikukus atau dipanggang. Di Kepulauan Riau, otak-otak dibungkus dengan daun kelapa atau nipah dan dibakar, memberikan aroma khas yang berbeda dari otak-otak di daerah lain.",
+        "gambar": "images/otak-otak.jpg",
+        "harga": "30000",
+        "lokasi": "toko oleh-oleh Tanjungpinang"
+    },
+    {
+        "id":8,
+        "judul": "Es Laksamana Mengamuk",
+        "deskripsi": "Es Laksamana Mengamuk adalah minuman khas Riau yang terbuat dari buah kuweni, santan, dan gula merah. Nama uniknya berasal dari cerita rakyat tentang seorang laksamana yang mengamuk karena istrinya dibawa pergi oleh pemilik kebun kuweni, sehingga ia menebaskan pedangnya ke pohon-pohon kuweni. Buah kuweni yang jatuh kemudian diambil oleh warga dan diolah menjadi minuman segar ini.",
+        "gambar": "images/es-laksamana.jpg",
+        "harga": "8000",
+        "lokasi": "Warung makan di Batam"
+    }
+]

@@ -1,0 +1,74 @@
+[
+  {
+      "id" : 1, 
+      "judul": "Tanjak",
+      "deskripsi": "Tanjak adalah penutup kepala pria Melayu yang melambangkan status dan kehormatan. Dikenakan dalam acara adat dan resmi, tanjak mencerminkan identitas budaya Melayu yang kuat.",
+      "gambar": "images/tanjak.jpg",
+      "harga": "150000",
+      "lokasi": "Pasar tradisional dan toko adat di Tanjungpinang"
+  },
+  {
+      "id" : 2, 
+      "judul": "Kain Songket",
+      "deskripsi": "Kain Songket adalah kain tenun dengan motif emas atau perak, sering digunakan dalam pakaian adat. Melambangkan kemewahan dan status sosial, songket merupakan warisan budaya yang dijaga oleh masyarakat Melayu.",
+      "gambar": "images/kain-songket.jpg",
+      "harga": "500000",
+      "lokasi": "Toko kain dan pengrajin di Bintan"
+  },
+  {
+      "id" : 3, 
+      "judul": "Tudung Saji Pandan",
+      "deskripsi": "Tudung Saji Pandan adalah penutup makanan yang dianyam dari daun pandan, menunjukkan keterampilan kerajinan tangan masyarakat Kepri. Kerajinan ini tidak hanya fungsional tetapi juga memiliki nilai estetika tinggi.",
+      "gambar": "images/tudung-saji-pandan.jpg",
+      "harga": "50000",
+      "lokasi": "Pasar tradisional di Batam"
+  },
+  {
+      "id" : 4, 
+      "judul": "Keris Melayu",
+      "deskripsi": "Keris Melayu adalah senjata tradisional yang juga berfungsi sebagai simbol budaya dan spiritual masyarakat Melayu. Keris sering digunakan dalam upacara adat dan dianggap memiliki kekuatan magis.",
+      "gambar": "images/kris-melayu.jpg",
+      "harga": "1000000",
+      "lokasi": "Toko seni dan pengrajin di Natuna"
+  },
+  {
+      "id" : 5, 
+      "judul": "Tudung Manto",
+      "deskripsi": "Tudung Manto adalah selendang berhias benang emas atau perak, dikenakan oleh perempuan bangsawan Melayu sejak abad ke-18. Melambangkan kehormatan dan status sosial, tudung manto merupakan bagian penting dari busana adat Melayu.",
+      "gambar": "images/Tudung-manto.jpg",
+      "harga": "300000",
+      "lokasi": "Toko adat dan pasar tradisional di Lingga"
+  },
+  {
+      "id" : 6, 
+      "judul": "Baju Kurung",
+      "deskripsi": "Baju Kurung adalah pakaian tradisional perempuan Melayu berupa baju longgar dan rok panjang, mencerminkan kesopanan dan identitas budaya. Busana ini umum dikenakan dalam kehidupan sehari-hari maupun acara resmi.",
+      "gambar": "images/Baju-kurung-Melayu.jpg",
+      "harga": "200000",
+      "lokasi": "Toko pakaian adat di Batam, Tanjung Pinang, dan Bintan"
+  },
+  {
+      "id" : 7, 
+      "judul": "Kerajinan Kulit Kerang",
+      "deskripsi": "Kerajinan Kulit Kerang adalah kerajinan tangan yang memanfaatkan kulit kerang untuk membuat berbagai hiasan dan pernak-pernik. Kerajinan ini mencerminkan kreativitas masyarakat pesisir dalam memanfaatkan sumber daya alam.",
+      "gambar": "images/kerajinan-kulit-kerang.jpg",
+      "harga": "75000",
+      "lokasi": "Pasar oleh-oleh di Batam, Anambas, dan Tanjung Pinang"
+  },
+  {
+      "id" : 8, 
+      "judul": "Tepak Sirih",
+      "deskripsi": "Tepak Sirih adalah kotak berisi sirih dan perlengkapannya, digunakan dalam upacara adat sebagai simbol penghormatan dan persahabatan. Tradisi menyajikan sirih menunjukkan nilai-nilai keramahan dan sopan santun dalam budaya Melayu.",
+      "gambar": "images/Tepak-sirih.jpg",
+      "harga": "100000",
+      "lokasi": "Toko kerajinan dan pasar adat di Karimun"
+  },
+  {
+      "id" : 9, 
+      "judul": "Anyaman Rotan",
+      "deskripsi": "Anyaman Rotan adalah kerajinan tangan dari rotan yang dibuat menjadi berbagai barang seperti tikar, tas, dan perabot rumah tangga. Kerajinan ini menunjukkan keterampilan dan ketekunan masyarakat dalam menghasilkan produk yang berguna dan indah.",
+      "gambar": "images/anyaman-rotan.jpg",
+      "harga": "80000",
+      "lokasi": "Pasar tradisional dan pengrajin di Lingga"
+  }
+]
