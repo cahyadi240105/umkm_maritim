@@ -53,12 +53,11 @@
             @endforeach
         </div>
         <div id="wa-button-container" class="fixed bottom-6 right-6 hidden">
-            <a id="wa-button" href="#" class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 flex items-center justify-center">
+            <a id="wa-button" href="_blank" class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 flex items-center justify-center">
                 <i class="fab fa-whatsapp text-2xl mr-2"></i>
                 <span>Pesan via WA</span>
             </a>
         </div>
     </div>
-  
-
+    
 @include('partials.footer')

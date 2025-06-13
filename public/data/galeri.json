@@ -1,0 +1,138 @@
+[
+    {
+        "judul" : "Lakse Kuah",
+        "deskripsi" : "Lakse Kuah adalah hidangan tradisional Melayu dari Kabupaten Karimun dan Natuna, terbuat dari sagu yang dibentuk seperti mi dan disajikan dengan kuah santan kental berbumbu rempah serta ikan salai. Hidangan ini mencerminkan perpaduan budaya Melayu dan Tionghoa yang telah lama berbaur di wilayah ini.",
+        "gambar" : "images/laksa-kuah.jpg"
+    },
+    {
+        "judul" : "Gubal Sagu",
+        "deskripsi" : "Gubal Sagu adalah makanan khas dari Kabupaten Lingga, terbuat dari sagu parut halus yang dicampur dengan kelapa muda parut, dibentuk menjadi butiran kecil, kemudian dikukus hingga matang, dikeringkan, dan disajikan kembali dalam bentuk lempengan atau butiran. Makanan ini sering dijadikan pengganti nasi oleh masyarakat pesisir Kepri dan memiliki sejarah panjang sejak masa Kesultanan Riau-Lingga.",
+        "gambar" : "images/gubal.jpg"
+    },
+    {
+        "judul" : "Tepung Gomak",
+        "deskripsi" : "Tepung Gomak adalah kue tradisional khas Melayu yang populer di Kepulauan Riau, termasuk di Bintan. Terbuat dari tepung ketan, kue ini dilumuri oleh kacang hijau yang telah dihaluskan. Nama gomak berasal dari kata dalam bahasa Melayu yang berarti dibedaki, menggambarkan tampilan kue yang seperti dibaluri tepung.",
+        "gambar" : "images/tepung-gomak.jpg"
+    },
+    {
+        "judul" : "Luti Gendang",
+        "deskripsi" : "Luti Gendang adalah roti goreng berisi ikan suwir berbumbu, berasal dari Anambas. Nama luti berasal dari pelafalan roti dalam dialek Tionghoa, sedangkan gendang berarti digoreng dalam bahasa Tarempa. Makanan ini mencerminkan akulturasi budaya di Kepulauan Riau dan sering dijadikan oleh-oleh khas Batam dan sekitarnya.",
+        "gambar" : "images/luti-gendang.jpg"
+    },
+    {
+        "judul" : "Mie Lendir",
+        "deskripsi" : "Mie Lendir adalah makanan khas dari Provinsi Kepulauan Riau, berupa mi kuning yang disajikan dengan saus kental berbumbu menyerupai lendir. Hidangan ini pertama kali dibuat oleh seorang pedagang Jawa bernama Sailun pada tahun 1960-an dan kemudian dijual secara berkeliling kota.",
+        "gambar" : "images/gubal.jpg"
+    },
+    {
+        "judul" : "Nasi Lemak",
+        "deskripsi" : "Nasi Lemak adalah makanan tradisional Melayu yang berasal dari Semenanjung Malaysia. Hidangan ini terdiri dari nasi yang dimasak dengan santan kelapa untuk memberikan rasa gurih, dan biasanya disajikan dengan telur, irisan mentimun, ikan bilis goreng, serta sambal. Nasi lemak kini menjadi makanan nasional Malaysia dan juga populer di Indonesia, Singapura, dan negara-negara lain di kawasan Asia Tenggara.",
+        "gambar" : "images/nasi-lemak.jpg"
+    },
+    {
+        "judul" : "Otak-otak",
+        "deskripsi" : "Otak-otak adalah makanan khas Nusantara yang terbuat dari olahan ikan yang dihaluskan dan dicampur rempah-rempah, lalu dibungkus oleh daun dan dimasak dengan cara dikukus atau dipanggang. Di Kepulauan Riau, otak-otak dibungkus dengan daun kelapa atau nipah dan dibakar, memberikan aroma khas yang berbeda dari otak-otak di daerah lain.",
+        "gambar" : "images/otak-otak.jpg"
+    },
+    {
+        "judul" : "Es Laksamana Mengamuk",
+        "deskripsi" : "Es Laksamana Mengamuk adalah minuman khas Riau yang terbuat dari buah kuweni, santan, dan gula merah. Nama uniknya berasal dari cerita rakyat tentang seorang laksamana yang mengamuk karena istrinya dibawa pergi oleh pemilik kebun kuweni, sehingga ia menebaskan pedangnya ke pohon-pohon kuweni. Buah kuweni yang jatuh kemudian diambil oleh warga dan diolah menjadi minuman segar ini.",
+        "gambar" : "images/es-laksamana.jpg"
+    },
+    {
+        "judul" : "Gonggong Rebus",
+        "deskripsi" : "Gonggong Rebus adalah hidangan khas Batam yang terbuat dari siput laut yang direbus dan disajikan dengan saus cocolan. Gonggong telah menjadi ikon kuliner Batam dan sering ditemui di restoran seafood.",
+        "gambar" : "images/gonggong-rebus.jpg"
+    },
+    {
+        "judul": "Tanjak",
+        "deskripsi": "Tanjak adalah penutup kepala pria Melayu yang melambangkan status dan kehormatan. Dikenakan dalam acara adat dan resmi, tanjak mencerminkan identitas budaya Melayu yang kuat.",
+        "gambar": "images/tanjak.jpg"
+      },
+      {
+        "judul": "Kain Songket",
+        "deskripsi": "Kain Songket adalah kain tenun dengan motif emas atau perak, sering digunakan dalam pakaian adat. Melambangkan kemewahan dan status sosial, songket merupakan warisan budaya yang dijaga oleh masyarakat Melayu.",
+        "gambar": "images/kain-songket.jpg"
+      },
+      {
+        "judul": "Tudung Saji Pandan",
+        "deskripsi": "Tudung Saji Pandan adalah penutup makanan yang dianyam dari daun pandan, menunjukkan keterampilan kerajinan tangan masyarakat Kepri. Kerajinan ini tidak hanya fungsional tetapi juga memiliki nilai estetika tinggi.",
+        "gambar": "images/tudung-saji-pandan.jpg"
+      },
+      {
+        "judul": "Keris Melayu",
+        "deskripsi": "Keris Melayu adalah senjata tradisional yang juga berfungsi sebagai simbol budaya dan spiritual masyarakat Melayu. Keris sering digunakan dalam upacara adat dan dianggap memiliki kekuatan magis.",
+        "gambar": "images/kris-melayu.jpg"
+      },
+      {
+        "judul": "Tudung Manto",
+        "deskripsi": "Tudung Manto adalah selendang berhias benang emas atau perak, dikenakan oleh perempuan bangsawan Melayu sejak abad ke-18. Melambangkan kehormatan dan status sosial, tudung manto merupakan bagian penting dari busana adat Melayu.",
+        "gambar": "images/Tudung-manto.jpg"
+      },
+      {
+        "judul": "Baju Kurung",
+        "deskripsi": "Baju Kurung adalah pakaian tradisional perempuan Melayu berupa baju longgar dan rok panjang, mencerminkan kesopanan dan identitas budaya. Busana ini umum dikenakan dalam kehidupan sehari-hari maupun acara resmi.",
+        "gambar": "images/Baju-kurung-Melayu.jpg"
+      },
+      {
+        "judul": "Kerajinan Kulit Kerang",
+        "deskripsi": "Kerajinan Kulit Kerang adalah kerajinan tangan yang memanfaatkan kulit kerang untuk membuat berbagai hiasan dan pernak-pernik. Kerajinan ini mencerminkan kreativitas masyarakat pesisir dalam memanfaatkan sumber daya alam.",
+        "gambar": "images/kerajinan-kulit-kerang.jpg"
+      },
+      {
+        "judul": "Tepak Sirih",
+        "deskripsi": "Tepak Sirih adalah kotak berisi sirih dan perlengkapannya, digunakan dalam upacara adat sebagai simbol penghormatan dan persahabatan. Tradisi menyajikan sirih menunjukkan nilai-nilai keramahan dan sopan santun dalam budaya Melayu.",
+        "gambar": "images/Tepak-sirih.jpg"
+      },
+      {
+        "judul": "Anyaman Rotan",
+        "deskripsi": "Anyaman Rotan adalah kerajinan tangan dari rotan yang dibuat menjadi berbagai barang seperti tikar, tas, dan perabot rumah tangga. Kerajinan ini menunjukkan keterampilan dan ketekunan masyarakat dalam menghasilkan produk yang berguna dan indah.",
+        "gambar": "images/anyaman-rotan.jpg"
+      },
+    {
+        "judul": "Rumput Laut",
+        "deskripsi": "Rumput Laut dibudidayakan dan digunakan dalam berbagai produk makanan dan kosmetik. Kepri memiliki potensi besar dalam budidaya rumput laut karena perairannya yang bersih dan kaya nutrisi.",
+        "gambar": "images/Rumput-laut.jpg"
+    },
+    {
+        "judul": "Siput",
+        "deskripsi": "Siput, termasuk gonggong, menjadi bahan makanan khas yang digemari. Siput laut ini sering diolah menjadi berbagai hidangan lezat dan menjadi bagian dari kuliner khas Kepri.",
+        "gambar": "images/siput.jpg"
+    },
+    {
+        "judul": "Bilis",
+        "deskripsi": "Bilis adalah ikan teri kecil yang sering dijadikan ikan asin atau bahan sambal. Ikan ini merupakan sumber protein yang penting bagi masyarakat pesisir dan sering digunakan dalam berbagai masakan tradisional.",
+        "gambar": "images/bilis.jpg"
+    },
+    {
+        "judul": "Teripang",
+        "deskripsi": "Teripang adalah hewan laut yang dikeringkan dan digunakan dalam pengobatan tradisional serta masakan. Kepri dikenal sebagai salah satu daerah penghasil teripang berkualitas tinggi.",
+        "gambar": "images/teripang.jpg"
+    },
+    {
+        "judul": "Gonggong",
+        "deskripsi": "Gonggong adalah siput laut khas Batam, sering direbus dan disajikan dengan saus. Hidangan ini telah menjadi ikon kuliner Batam dan sering ditemui di restoran seafood.",
+        "gambar": "images/gonggong.jpg"
+    },
+    {
+        "judul": "Kerang Dara",
+        "deskripsi": "Kerang Dara adalah kerang yang sering dikonsumsi sebagai makanan laut segar atau olahan. Kerang ini memiliki rasa yang lezat dan menjadi favorit di kalangan pecinta seafood.",
+        "gambar": "images/kerang-dara.jpg"
+    },
+    {
+        "judul": "Cumi-cumi",
+        "deskripsi": "Cumi-cumi adalah hasil laut yang umum diolah menjadi berbagai masakan seperti cumi goreng, cumi bakar, atau cumi asam manis. Cumi-cumi merupakan sumber protein yang penting dan banyak ditemukan di perairan Kepri.",
+        "gambar": "images/cumi.jpg"
+    },
+    {
+        "judul": "Kepiting Bakau",
+        "deskripsi": "Kepiting bakau adalah hasil laut khas Kepulauan Riau yang hidup di sekitar hutan mangrove, terutama di daerah seperti Bintan, Batam, dan Karimun. Dagingnya yang tebal dan gurih sering diolah menjadi masakan khas seperti gulai kepiting atau kepiting lada hitam. Kini, kepiting bakau juga mulai dibudidayakan dan menjadi komoditas ekspor.",
+        "gambar": "images/kepiting-bakau.jpg"
+    },
+    {
+        "judul": "Remis",
+        "deskripsi": "Remis adalah sejenis kerang kecil yang hidup di perairan dangkal berlumpur dan banyak ditemukan di pesisir Kepulauan Riau seperti Bintan dan Lingga. Remis rebus, tumis pedas, dan gulai remis menjadi bagian dari kuliner khas Melayu Kepri yang sederhana namun lezat. Selain kulinernya, remis juga memiliki nilai ekonomi bagi nelayan lokal.",
+        "gambar": "images/remis.jpg"
+    }
+]
+        
