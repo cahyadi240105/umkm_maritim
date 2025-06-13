@@ -10,7 +10,7 @@
                       <path stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M19 19l-4-4m0-7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
                   </svg>
               </div>
-              <input type="search" id="default-search" class="search-input w-full p-4 pl-10 text-sm text-black border border-black rounded-full bg-white focus:ring-1 focus:ring-black focus:border-black font-poppins text-lg font-normal" placeholder="Search ..." required name="search", value="{{ $search }}"/>
+              <input type="search" id="default-search" autocomplete="off" class="search-input w-full p-4 pl-10 text-sm text-black border border-black rounded-full bg-white focus:ring-1 focus:ring-black focus:border-black font-poppins text-lg font-normal" placeholder="Search ..." required name="search", value="{{ $search }}"/>
           </div>
       </form>
   </section>
@@ -58,7 +58,7 @@
   </section>
 
   <!-- Highlight Section -->
-  <section class="highlight-section h-auto py-12 flex items-center justify-center px-4 w-[clamp(2rem,5vw ,2rem)]">
+  <section class="highlight-section h-auto py-12 flex items-center justify-center px-4 w-[clamp(2rem,5vw ,2rem)">
       <div class="text-center">
           <div class="flex flex-col md:flex-row items-center justify-center">
               <div class="w-15 h-px bg-gray-500"></div>
@@ -72,7 +72,6 @@
   </section>
 
   @if(empty($search))
-    <!-- Tampilan default - 3 produk acak -->
     <section class="products-section relative w-full max-w-[1203px] mx-auto px-4 w-[clamp(2rem,5vw,2rem)]">
         @foreach ($produk_full as $index => $item)
         <div class="product-item relative mb-14 h-52 @if($loop->last) mb-0 @endif">
@@ -84,7 +83,6 @@
             <p class="absolute {{ $loop->iteration % 2 === 0 ? 'top-10 left-0 w-[575px]' : 'top-10 left-[622px] w-[575px]' }} text-justify font-open-sans text-base text-black text-[clamp(0.875rem, 1.5vw, 1rem)]">
                 {{ $item['deskripsi'] }}
             </p>
-            
         </div>
         @endforeach
     </section>
@@ -100,7 +98,6 @@
             </a>
             
             <div id="modal-{{ $index }}" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <!-- Konten modal sama seperti sebelumnya -->
             </div>
         
             <!-- Gambar -->

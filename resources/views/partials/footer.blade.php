@@ -80,7 +80,7 @@
     
     <div class="mt-12 border-t border-white pt-6 text-center">
       
-      <p class="text-xs font-['Poppins']">© 2025 UMKM Maritim Kepulauan Riau</p>
+      <p class="text-xs font-['Poppins']">© 2025 UMKM Maritim Kepulauan Riau - Cahyadi Prasetyo</p>
   </div>
   </footer>
 
@@ -121,6 +121,95 @@
         behavior: "smooth"
       });
     });
-  </script>  
+  </script>
+  
+  <script>
+    // Array untuk menyimpan item yang dipilih
+    let selectedItems = [];
+    
+    function handleCheckboxClick(checkbox, id) {
+        if (checkbox.checked) {
+            // Tambahkan ke array jika belum ada
+            if (!selectedItems.includes(id)) {
+                selectedItems.push(id);
+            }
+        } else {
+            // Hapus dari array jika ada
+            selectedItems = selectedItems.filter(item => item !== id);
+        }
+        
+        // Toggle tampilan WA button
+        toggleWaButton();
+        
+        console.log('Selected Items:', selectedItems);
+    }
+    
+    function toggleWaButton() {
+        const waButtonContainer = document.getElementById('wa-button-container');
+        const waButton = document.getElementById('wa-button');
+        
+        if (selectedItems.length > 0) {
+            // Update href WA button dengan parameter yang dipilih
+            waButton.href = `https://wa.me/?text=Saya%20ingin%20memesan:%20${selectedItems.join(',')}`;
+            waButtonContainer.classList.remove('hidden');
+        } else {
+            waButtonContainer.classList.add('hidden');
+        }
+    }
+    
+    // Fungsi updateTotal tetap sama
+    function updateTotal(input) {
+        const price = parseFloat(input.getAttribute('data-price'));
+        const quantity = parseInt(input.value);
+        const total = price * quantity;
+        const totalElement = input.closest('.flex').querySelector('.total-price');
+        
+        totalElement.textContent = 'Rp.' + total.toLocaleString('id-ID');
+    }
+</script>
+<script>
+  // JavaScript untuk client-side filtering (sama seperti sebelumnya)
+  document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('searchInput');
+      const categoryFilter = document.getElementById('categoryFilter');
+      const sortFilter = document.getElementById('sortFilter');
+      const galleryItems = document.querySelectorAll('.product-item');
+      
+      function updateQueryParams() {
+          const params = new URLSearchParams();
+          
+          if (searchInput.value) params.set('search', searchInput.value);
+          if (categoryFilter.value) params.set('category', categoryFilter.value);
+          if (sortFilter.value !== 'terbaru') params.set('sort', sortFilter.value);
+          
+          window.location.search = params.toString();
+      }
+      
+      // Event listeners
+      searchInput.addEventListener('change', updateQueryParams);
+      categoryFilter.addEventListener('change', updateQueryParams);
+      sortFilter.addEventListener('change', updateQueryParams);
+  });
+  </script>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.remove("opacity-0", "invisible");
+            scrollToTopBtn.classList.add("opacity-100", "visible");
+        } else {
+            scrollToTopBtn.classList.add("opacity-0", "invisible");
+            scrollToTopBtn.classList.remove("opacity-100", "visible");
+        }
+    });
+    
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 </body>
 </html>
