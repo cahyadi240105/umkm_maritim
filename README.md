@@ -78,6 +78,8 @@ Lalu jalankan migrasi (jika sudah tersedia):
 ```bash
 php artisan migrate
 ```
+Jika Tidak Memakai database maka bisa menggunakan JSON statis
+
 ### 5.Install Dependensi Frontend (Tailwind CSS & Flowbite)
 Instalasi dependensi frontend menggunakan NPM:
 ```bash
